@@ -1269,6 +1269,16 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to use the assist key as a camera shutter while a camera is active.
+         * 0 = 0ff, 1 = on
+         */
+        public static final String ASSIST_CAMERA_SHUTTER = "assist_camera_shutter";
+
+        /**  */
+        public static final Validator ASSIST_CAMERA_SHUTTER_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to wake the screen with the app switch key, the value is boolean.
          * 0 = 0ff, 1 = on
          */
@@ -2173,6 +2183,7 @@ public final class LineageSettings {
             VALIDATORS.put(KEY_EDGE_LONG_SWIPE_ACTION, KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR);
             VALIDATORS.put(HOME_WAKE_SCREEN, HOME_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(ASSIST_WAKE_SCREEN, ASSIST_WAKE_SCREEN_VALIDATOR);
+            VALIDATORS.put(ASSIST_CAMERA_SHUTTER, ASSIST_CAMERA_SHUTTER_VALIDATOR);
             VALIDATORS.put(APP_SWITCH_WAKE_SCREEN, APP_SWITCH_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(CAMERA_WAKE_SCREEN, CAMERA_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(CAMERA_SLEEP_ON_RELEASE, CAMERA_SLEEP_ON_RELEASE_VALIDATOR);
